@@ -1,0 +1,339 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+.admin-header {
+    background-color: #1f2937;
+    color: white;
+    padding: 18px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 10px 18px;
+
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #b02a37;
+}
+
+
+
+.admin-container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+
+.section-title {
+    font-size: 24px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+
+    color: #1f2937;
+}
+
+
+/* ==============================
+   REQUEST CARD
+================================= */
+
+.request-card {
+    background-color: white;
+
+    border-radius: 10px;
+
+    padding: 22px;
+
+    margin-bottom: 18px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+    border-left: 5px solid #198754;
+}
+
+.request-card.archived {
+    border-left: 5px solid #6c757d;
+}
+
+.request-card p {
+    margin: 10px 0;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+.request-card strong {
+    color: #333;
+}
+
+
+.status-active {
+    color: #198754;
+    font-weight: bold;
+}
+
+.status-archived {
+    color: #6c757d;
+    font-weight: bold;
+}
+
+
+.button-group {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.archive-button {
+    background-color: #f59e0b;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    padding: 9px 16px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.archive-button:hover {
+    background-color: #d97706;
+}
+
+
+.restore-button {
+    background-color: #198754;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    padding: 9px 16px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.restore-button:hover {
+    background-color: #146c43;
+}
+
+
+
+.no-requests {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    color: #777;
+
+    text-align: center;
+}
+
+
+.contact-container {
+    width: 450px;
+
+    margin: 80px auto;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    overflow: hidden;
+}
+
+.contact-header {
+    background-color: #cdcccc;
+
+    padding: 25px 30px;
+}
+
+.contact-header h1 {
+    margin: 0;
+
+    font-size: 28px;
+}
+
+.contact-header p {
+    margin-top: 8px;
+
+    color: #666;
+}
+
+.contact-form {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+.form-group textarea {
+    height: 120px;
+
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #777;
+
+    color: white;
+
+    border: none;
+
+    padding: 11px 25px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #555;
+}
+
+
+@media (max-width: 600px) {
+
+    .admin-header {
+        padding: 15px 20px;
+    }
+
+    .admin-header h1 {
+        font-size: 20px;
+    }
+
+    .admin-container {
+        width: 94%;
+    }
+
+    .contact-container {
+        width: 94%;
+
+        margin: 30px auto;
+    }
+}
+
+.admin-login-button {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    padding: 12px 20px;
+
+    background-color: #333;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.admin-login-button:hover {
+    background-color: #555;
+}
+
+
+.login-container {
+    width: 400px;
+
+    margin: 100px auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-container a {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #333;
+
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
