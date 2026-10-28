@@ -1,0 +1,20 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+
+# Logs
+logs/
+*.log
+
+# Runtime scheduling state
+last_run_date.txt
+
+# VS Code workspace settings
+.vscode/
